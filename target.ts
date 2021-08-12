@@ -28,7 +28,7 @@ async function isOutOfStock(): Promise<boolean> {
             console.log(`Hmm, I blew up. attempt ${++x}`, e)
         }
 
-        await sleep(60000)
+        await sleep(30000)
     }
 
     await freakOut('TARGET')

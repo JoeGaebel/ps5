@@ -34,7 +34,7 @@ getAvail
 while [ $? -eq 0 ]; do
   ((x+=1))
   echo "Nope.... attempt: $x"
-  sleep 60
+  sleep 30
   getAvail
 done
 freakOut

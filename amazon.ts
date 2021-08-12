@@ -21,10 +21,10 @@ async function findOutStock(): Promise<boolean> {
                 console.log(`Nope... attempt: ${++x}`)
             }
         } catch (e) {
-            console.log(`Hmm, I blew up. attempt ${++x}`, e.response.status)
+            console.log(`Hmm, I blew up. attempt ${++x}`, e?.response?.status)
         }
 
-        await sleep(60000)
+        await sleep(30000)
     }
 
     await freakOut('AMAZON')
